@@ -577,6 +577,7 @@ ggcorrplot(cor_matrix,
 ```
 
 ![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-23-1.png)
+
 Selection criteria: at least ~ .05 coefficient. Amenities: keep them
 all, might be relevant for other samples
 
@@ -584,7 +585,7 @@ all, might be relevant for other samples
 
 ### Accommodates nr
 
-We include it as categorical, with linear fit
+We include it as numerical, with linear fit
 
 ``` r
 ggplot(MIQ1_db,aes(x= accommodates , y = price_ln)) + 
@@ -601,9 +602,10 @@ ggplot(MIQ1_db,aes(x= accommodates , y = price_ln)) +
 ```
 
 ![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-24-1.png)
-keep linear
+
 
 ### Correlation tab numerical variables with price
+
 
 Select variables we want to include in the correlation tab
 
@@ -631,6 +633,7 @@ ggcorrplot(cor_matrix,
 ```
 
 ![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-25-1.png)
+
 Selection criteria: at least ~ .05 coefficient. Drop host_response rate.
 We use accommodates (higher correlation than beds, drop it), plus
 bedrooms (as categorical), availability_30 (highest corr)
