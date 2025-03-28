@@ -450,11 +450,11 @@ ggplot(MIQ1_db, aes(x= room_type, y= price_ln, fill = room_type)) +
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-18-1.png)
 
-#### Interaction between Room type and dummy Pets allowed
+#### Pets allowed dummy
 
-No meaningful results in this case
+(tried also interaction with room type, but no meaningful results in this case)
 
 ``` r
 MIQ1_db %>% tabyl(bathrooms, d_sharebath) # there's variation across categories
@@ -491,7 +491,7 @@ ggplot(MIQ1_db, aes(x= d_am_petsallowed, y= price_ln, fill = as.factor(d_am_pets
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2/Part1_modelling/Plots/unnamed-chunk-17-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-19-1.png)
 
 ``` r
 # no difference    
@@ -531,7 +531,7 @@ plot_aptsize <- ggarrange(b1,b2)
 annotate_figure(plot_aptsize , top = text_grob("Flat size numeric vs categorical, MIQ1", color = "black", family = "Garamond", size = 14))
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-20-1.png)
 
 Keep categorical - create dummies
 
@@ -573,7 +573,7 @@ ggcorrplot(cor_matrix,
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-23-1.png)
 Selection criteria: at least ~ .05 coefficient. Amenities: keep them
 all, might be relevant for other samples
 
@@ -597,7 +597,7 @@ ggplot(MIQ1_db,aes(x= accommodates , y = price_ln)) +
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-24-1.png)
 keep linear
 
 ### Correlation tab numerical variables with price
@@ -627,7 +627,7 @@ ggcorrplot(cor_matrix,
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-25-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-25-1.png)
 Selection criteria: at least ~ .05 coefficient. Drop host_response rate.
 We use accommodates (higher correlation than beds, drop it), plus
 bedrooms (as categorical), availability_30 (highest corr)
