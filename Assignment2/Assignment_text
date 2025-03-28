@@ -3,7 +3,8 @@ Business case
  Your business case is to operate a chain of airbnbs. You need a pricing model. 
 
 Part I. Modelling
-1. Go to inside airbnb and pick a city. Your core dataset should have at least 10K rows. Go back in time and download listings data for an earlier quarter. (7p) Milan, 2024 Q1 – up to 24/03/24
+1. Go to inside airbnb and pick a city. Your core dataset should have at least 10K rows. Go back in time and download listings data for an earlier quarter. (7p) 
+--> chosen city Milan, 2024 Q1 – up to 24/03/24
 •	Carry out data wrangling such as extracting amenities and imputing missing values. 
 •	Think about the process before jumping in and explain your variable selection and feature engineering choices. 
 •	You can use the code of the case study or AI for coding. 
@@ -24,7 +25,9 @@ Part I. Modelling
 
 Part II. Validity
 5. Let us have two "live" datasets. (5p)
-   A. Download another (later) date.  Repeat data wrangling Milan, 2024 Q3 – up to 17/09/2024
-   B. Download another city in the same country or region, with at least 3K observations. Repeat data wrangling. Bergamo, 2024 Q3 – up to 29/09/2024
+   A. Download another (later) date.  Repeat data wrangling
+    --> chosen city  Milan, 2024 Q3 – up to 17/09/2024
+   B. Download another city in the same country or region, with at least 3K observations. Repeat data wrangling. 
+    --> chosen city Bergamo, 2024 Q3 – up to 29/09/2024
 6. Use your 5 core models on the A. Later date and B. Other city data. Compare model performance and discuss the experience. (5p)
 
