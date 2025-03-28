@@ -427,7 +427,7 @@ annotate_figure(plot_p, top = text_grob("USD Price distribution AirBnB, MIQ1",
                color = "black", family = "Garamond", size = 14))
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](Assignment2/Part1_modelling/Plots/unnamed-chunk-17-1.png)<!-- -->
 Log distribution looks well-behaved, go for log transformation.
 
 ## 2.2 Factoral variables
