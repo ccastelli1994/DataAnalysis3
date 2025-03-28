@@ -41,12 +41,15 @@ options(digits = 3)
 
 
 ```{r include = FALSE, message = FALSE , warning = FALSE}
-# Define folders and source functions
 
+# Define folders and source functions 
+# change name wd
 setwd("C:/Users/Castelli/Desktop/WU_exams/CEU_WiSe25/Machine_Learning/Assignment2/")
 
-source("C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/theme_bg.R")
-source("C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/da_helper_functions.R")
+# and sources path
+source_dir <- "C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/"
+source(paste( source_dir, "theme_bg.R", sep = ''))
+source(paste( source_dir, "da_helper_functions.R", sep = ''))
 
 
 ```
@@ -54,8 +57,11 @@ source("C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/da_helper
 # Reading the Database 
 
 ```{r include = FALSE, message = FALSE , warning = FALSE}
-# read db
-MIQ1_db <- read_csv("C:/Users/Castelli/Desktop/WU_exams/CEU_WiSe25/Machine_Learning/Assignment2/MilanQ1listings/listings.csv",na = c("N/A", "NA") )
+# Option 1: from local file 
+# MIQ1_db <- read_csv("C:/Users/Castelli/Desktop/WU_exams/CEU_WiSe25/Machine_Learning/Assignment2/MilanQ1listings/listings.csv",na = c("N/A", "NA") )
+# Option 2: from OSF
+MIQ1_db <- read.csv( 'https://osf.io/fxyu9/download', na = c("N/A", "NA"), )
+
 
 names(MIQ1_db)
 length(unique(MIQ1_db$id)) # unique ID for each observation
