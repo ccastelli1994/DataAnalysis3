@@ -490,7 +490,7 @@ ggplot(MIQ1_db, aes(x= d_am_petsallowed, y= price_ln, fill = as.factor(d_am_pets
     plot.title = element_text(family = "Garamond")) 
 ```
 
-![](Assignment2_airbnb_clean_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](Assignment2/Part1_modelling/Plots/unnamed-chunk-17-1.png)<!-- -->
 
 ``` r
 # no difference    
