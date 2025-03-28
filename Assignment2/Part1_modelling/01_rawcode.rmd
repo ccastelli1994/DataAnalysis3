@@ -1,5 +1,5 @@
 ---
-title: "Building a prediction model on house prices - data cleaning"
+title: "Building a prediction model on house prices - 01 data cleaning"
 author: Chiara Castelli
 output: github_document
 ---
