@@ -295,19 +295,6 @@ MIQ1_db$bedrooms_f <- as.factor(MIQ1_db$bedrooms_f)
 summary(MIQ1_db$bathrooms)
 # 2 missings
 
-# # replace with text when there is no info
-# MIQ1_db$bathrooms[is.na(MIQ1_db$bathrooms)] <- substr(MIQ1_db$bathrooms_text[is.na(MIQ1_db$bathrooms)], 1, 2)
-# 
-# MIQ1_db$bathrooms[MIQ1_db$bathrooms == "Ha"] <- "0.5"
-# 
-# conditions <- substr(MIQ1_db$bathrooms,2,2) == "." & (MIQ1_db$bathrooms != "0.5") &
-#                     !(is.na(MIQ1_db$bathrooms)) 
-# 
-# MIQ1_db$bathrooms[conditions == T] <- substr(MIQ1_db$bathrooms_text[conditions == T], 1, 3)
-# 
-# print('Final nr of NAs')
-# length(which(is.na(MIQ1_db$bathrooms))) 
-
 # finally, turn into numeric variable
 MIQ1_db$bathrooms <- as.numeric(MIQ1_db$bathrooms)
 
@@ -587,7 +574,7 @@ Amenities: keep them all, might be relevant for other samples
 
 ### Accommodates nr 
 
-We include it as categorical, with linear fit
+We include it as numerical, with linear fit
 
 ``` {r include = T, message = FALSE , warning = FALSE}
 ggplot(MIQ1_db,aes(x= accommodates , y = price_ln)) + 
