@@ -17,7 +17,7 @@ library(fastDummies)
 
 options(digits = 3)
 
-# Define folders and source functions
+# Define folders and source functions - change directories
 
 setwd("C:/Users/Castelli/Desktop/WU_exams/CEU_WiSe25/Machine_Learning/Assignment2/PART2")
 
@@ -25,7 +25,8 @@ source("C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/theme_bg.
 source("C:/Users/Castelli/DataAnalysis3/da_case_studies/ch00-tech-prep/da_helper_functions.R")
 
 # read db
-MIQ3_db <- read_csv("MIQ3_raw.csv",na = c("N/A", "NA") )
+#MIQ3_db <- read_csv("MIQ3_raw.csv",na = c("N/A", "NA") )
+MIQ3_db <- read_csv("https://osf.io/u92nh/download",na = c("N/A", "NA") )
 
 names(MIQ3_db)
 length(unique(MIQ3_db$id)) # unique ID for each observation
