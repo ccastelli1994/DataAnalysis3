@@ -288,20 +288,20 @@ following Table:
 
 #### Subsample performance on test set: RMSE-to-mean(y) ratio
 
-===========================================
-      Var.1     RMSE  Mean.price RMSE.price
--------------------------------------------
-1   Nr people                              
-2   large apt   0.509   4.970      0.102   
-3   small apt   0.432   4.610      0.094   
-4   Room Type                              
-5  Private room 0.455   4.370      0.104   
-6  Shared room  0.706   4.010      0.176   
-7    Borough                               
-8     BRERA     0.504   5.210      0.097   
-9     DUOMO     0.427   5.210      0.082   
-10     All      0.468   4.770      0.098   
--------------------------------------------
+
+|      Var.1   |RMSE | Mean.prce| RMSE.price|
+|--------------|-----|----------|-----------|
+|   Nr people  |     |          |           |       
+|   large apt  |0.509|   4.970  |    0.102  | 
+|   small apt  |0.432|   4.610  |    0.094  | 
+|   Room Type  |     |          |           |  
+|  Private room|0.455|   4.370  |    0.104  | 
+|  Shared room |0.706|   4.010  |    0.176  | 
+|    Borough   |     |          |           |  
+|     BRERA    |0.504|  5.210   |   0.097   |
+|     DUOMO    |0.427|  5.210   |   0.082   |
+|     All      |0.468|  4.770   |   0.098   |
+
 
 Here, with the exception of the category ‘shared room’, the overall
 stability in the RMSE-to-price ratios indicates a good model
@@ -413,16 +413,16 @@ difference between basic a broad tuning models.
 
 Hence, we can look at the corresponding table considering the test set:
 
-=============================================
-                                 Holdout RMSE
----------------------------------------------
-OLS M4                              0.490    
-Random forest (smaller model M3)    0.558    
-Random forest M4                    0.469    
-Random forest M4 + interact         0.488    
-GBM (basic tuning)                  0.434    
-GBM (broad tuning)                  0.442    
----------------------------------------------
+
+| Model                            | Holdout RMSE |
+|----------------------------------|--------------|
+| OLS M4                           |   0.490      |  
+| Random forest (smaller model M3) |   0.558      |
+| Random forest M4                 |   0.469      |
+| Random forest M4 + interact      |   0.488      |
+| GBM (basic tuning)               |   0.434      |
+| GBM (broad tuning)               |   0.442      |
+
 
 After a second RMSE evaluation on the test set, we select the basic GBM
 as our workhorse model. Despite considering 111 predictors, a subset of
