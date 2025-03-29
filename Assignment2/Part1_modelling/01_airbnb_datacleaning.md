@@ -2,7 +2,8 @@ Building a prediction model on house prices - 01 data cleaning
 ================
 Chiara Castelli
 
-This file reads, cleans and visualise data on the main AirBnb database (i.e. City: Milan, Q: 2024-Q1) 
+This file reads, cleans and visualise data on the main AirBnb database (i.e. City: Milan, Q: 2024-Q1).
+
 In the second part of the project, the same data routine is performed for the live sets of Milan Q3 (![scriptMIQ3](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/01cleaning_MIQ3.R)) and of Bergamo Q3 (![scriptBGQ3](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/01cleaning_BGQ3.R)).
 
 # Reading the Database
