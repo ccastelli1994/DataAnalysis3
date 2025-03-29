@@ -398,16 +398,15 @@ comparison across RMSE computed under different model specifications.
 In particular, the following table shows a comparison across model
 performance considering the training set:
 
-|-------------------------------------------|--------------|---|---|---|
-|                                           | CV RMSE      |   |   |   |
-|     OLS   M4                              |     0.511    |   |   |   |
-|     LASSO   M4                            |     0.554    |   |   |   |
-|     Random   forest (smaller model M3)    |     0.584    |   |   |   |
-|     Random   forest M4                    |     0.496    |   |   |   |
-|     Random   forest M4 + interact         |     0.512    |   |   |   |
-|     GBM   (basic tuning)                  |     0.484    |   |   |   |
-|     GBM   (broad tuning)                  |     0.483    |   |   |   |
-|-------------------------------------------|--------------|---|---|---|
+|     Model                                 |  CV RMSE     |
+|-------------------------------------------|--------------|
+|     OLS   M4                              |     0.511    |
+|     LASSO   M4                            |     0.554    |
+|     Random   forest (smaller model M3)    |     0.584    |
+|     Random   forest M4                    |     0.496    |
+|     Random   forest M4 + interact         |     0.512    |
+|     GBM   (basic tuning)                  |     0.484    |
+|     GBM   (broad tuning)                  |     0.483    |
 
 Where the lowest RMSE is given by the Boosting GBM model, with almost no
 difference between basic a broad tuning models.
