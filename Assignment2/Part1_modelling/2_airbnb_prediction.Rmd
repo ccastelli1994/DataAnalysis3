@@ -88,7 +88,14 @@ training_set = MIQ1_db[!(MIQ1_db$id %in% test_id),] # exclude post ids from test
 ```
 
 ## Prediction 
-
+                | CV RMSE      |   |   |   |
+|     OLS   M4                              |     0.511    |   |   |   |
+|     LASSO   M4                            |     0.554    |   |   |   |
+|     Random   forest (smaller model M3)    |     0.584    |   |   |   |
+|     Random   forest M4                    |     0.496    |   |   |   |
+|     Random   forest M4 + interact         |     0.512    |   |   |   |
+|     GBM   (basic tuning)                  |     0.484    |   |   |   |
+|     GBM   (broad tuning)                  |     0.483    |   |   |   |
 ### 1. OLS 
 
 We define different model to test as follows:
