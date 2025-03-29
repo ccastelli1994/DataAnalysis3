@@ -3,7 +3,7 @@ Building a prediction model on house prices - 02 Prediction Main db MIQ1
 Chiara Castelli
 
 Scope of this script is to build 5 different predictive models from the
-01_airbnb_datacleaning :
+![01_airbnb_datacleaning](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part1_modelling/01_airbnb_datacleaning.md) :
 
 1.  OLS  
 2.  LASSO  
