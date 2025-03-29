@@ -205,7 +205,7 @@ Prediction ranges seem quite wide.
 
 *Prediction versus actual (y-yhat))* (test set)
 
-![](2_airbnb_prediction_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/unnamed-chunk-13-1.png)
 
 The model seems to be under-predict very high prices (i.e. y axis \> 7)
 
@@ -288,6 +288,21 @@ following Table:
 
 #### Subsample performance on test set: RMSE-to-mean(y) ratio
 
+===========================================
+      Var.1     RMSE  Mean.price RMSE.price
+-------------------------------------------
+1   Nr people                              
+2   large apt   0.509   4.970      0.102   
+3   small apt   0.432   4.610      0.094   
+4   Room Type                              
+5  Private room 0.455   4.370      0.104   
+6  Shared room  0.706   4.010      0.176   
+7    Borough                               
+8     BRERA     0.504   5.210      0.097   
+9     DUOMO     0.427   5.210      0.082   
+10     All      0.468   4.770      0.098   
+-------------------------------------------
+
 Here, with the exception of the category ‘shared room’, the overall
 stability in the RMSE-to-price ratios indicates a good model
 performance.
@@ -300,6 +315,8 @@ We can start by looking at the singular most important predictors
 (i.e. ungrouped categorical variables) to check, for instance, the
 difference of results with Lasso.
 
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/rf_model_2_var_imp_plot_b.png)
+
 We can notice that these variables corresponds to the Lasso results,
 with the addition of the information on minimum and maximum days of
 stay. Furthermore, the two very central neighbourhoods of **Brera** and
@@ -308,6 +325,8 @@ for ~8%.
 
 We can further aggregate the categorical variables (i.e. neighbourhood,
 room type and bedroom/ property size):
+
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/rf_model_2_var_imp_grouped_plot.png)
 
 An important limitation of this plot lies in the fact that the group
 importance is given by the direct sum of all individual importance
@@ -327,6 +346,8 @@ To answer to this question, we can have a look at some Partial
 Dependence Plots (PDP) plotted in the next section.
 
 #### Partial Dependence Plots Train Set
+
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/pdp_numeric.png)
 
 Overall, we can say that both magnitude and functional forms are similar
 to those included in the OLS.
@@ -356,6 +377,10 @@ parameters in the second Boosting model.
 
 ## RF versus GBM most relevant features
 
+
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment2/Part1_modelling/Plots/rf_gbm_compare.png)
+
+
 We can compare the relevance of the predictors by looking at the
 Importance Plot under RF and GBM broad boosting models. As shown in the
 plot below, the set of top 11 predictors is identical, with minor
@@ -373,10 +398,33 @@ comparison across RMSE computed under different model specifications.
 In particular, the following table shows a comparison across model
 performance considering the training set:
 
+========================================
+                                 CV RMSE
+----------------------------------------
+OLS M4                            0.511 
+LASSO M4                          0.554 
+Random forest (smaller model M3)  0.584 
+Random forest M4                  0.496 
+Random forest M4 + interact       0.512 
+GBM (basic tuning)                0.484 
+GBM (broad tuning)                0.483 
+----------------------------------------
+
 Where the lowest RMSE is given by the Boosting GBM model, with almost no
 difference between basic a broad tuning models.
 
 Hence, we can look at the corresponding table considering the test set:
+
+=============================================
+                                 Holdout RMSE
+---------------------------------------------
+OLS M4                              0.490    
+Random forest (smaller model M3)    0.558    
+Random forest M4                    0.469    
+Random forest M4 + interact         0.488    
+GBM (basic tuning)                  0.434    
+GBM (broad tuning)                  0.442    
+---------------------------------------------
 
 After a second RMSE evaluation on the test set, we select the basic GBM
 as our workhorse model. Despite considering 111 predictors, a subset of
