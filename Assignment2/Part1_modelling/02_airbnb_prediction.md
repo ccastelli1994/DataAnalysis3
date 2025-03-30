@@ -258,14 +258,6 @@ some interactions terms not tested in the OLS, to check whether they
 emerge as significant. Specifically, we focus on interaction *among
 amenities*, as well as *between property features and location*.
 
-After performing the different RF specifications on the *training set*,
-we can check the models performance in the below table:
-
-| RMSE     | Median | Mean  |
-|----------|--------|-------|
-| model_1  | 0.587  | 0.584 |   
-| model_2  | 0.487  | 0.496 |   
-| model_3  | 0.517  | 0.512 |   
 
 ``` r
 # from ch14 Data Analysis book, let's add additional interactions
@@ -281,6 +273,14 @@ predictors_1rf <- c(basic_var)
 predictors_2rf <- c(basic_var, host_review_var, amenities_var, neigh_var)
 predictors_INTERACTrf <- c(basic_var, host_review_var, amenities_var, neigh_var, X1,X2)
 ```
+After performing the different RF specifications on the *training set*,
+we can check the models performance in the below table:
+
+| RMSE     | Median | Mean  |
+|----------|--------|-------|
+| model_1  | 0.587  | 0.584 |   
+| model_2  | 0.487  | 0.496 |   
+| model_3  | 0.517  | 0.512 |   
 
 Where Model 2 (wich corresponds to OLS M4 set of predictors) is chosen
 as best RF model. Within this specification, the lowest RMSE is found
