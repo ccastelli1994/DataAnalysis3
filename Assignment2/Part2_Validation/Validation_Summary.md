@@ -9,15 +9,15 @@ By repeating the entire model selection process performed for the main database 
 
 The results are summirised in the final Horse-Race Table below:
 
-| Model CV RMSE                   | MIQ3  |  BGQ3 | 
-|---------------------------------|-------|-------|
-|  OLS M4                         | 0. | 0.395 |
-|LASSO M4                         | 0. | 0.423 |
-|Random forest (smaller model M3) | 0. | 0.419 |
-|Random forest M4                 | 0. | 0.395 |
-|Random forest M4 + interact      | 0. | 0.394 |
-|GBM (basic tuning) M4            | 0. | 0.398 |
-|GBM (broad tuning) M4            | 0. | 0.392 |
+| Model CV RMSE                   |MIQ1 Test| MIQ3  |  BGQ3 | 
+|---------------------------------|---------|-------|-------|
+|  OLS M4                         | 0.490   | 0. | 0.395 |
+|LASSO M4                         | 0.539   | 0. | 0.423 |
+|Random forest (smaller model M3) | 0.558   | 0. | 0.419 |
+|Random forest M4                 | 0.469   | 0. | 0.395 |
+|Random forest M4 + interact      | 0.488   | 0. | 0.394 |
+|GBM (basic tuning) M4            | **0.434** | 0. | 0.398 |
+|GBM (broad tuning) M4            | 0.442   | 0. | **0.392** |
 
 where in both new samples, the GBM algorithms perform best. Hence, we can have a look at the corresponding fitted-to-actual y values:
 
