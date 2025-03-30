@@ -20,12 +20,18 @@ First, we can compare the final CV RMSE in a Horse-Race Table, where to the MIQ1
 |GBM (basic tuning) M4            | **0.434** | 0. | 0.398 |
 |GBM (broad tuning) M4            | 0.442   | 0. | **0.392** |
 
-Easily we can notice that across the different samples, the GBM algorithms perform best by returning the lowest RMSE.
-Hence, we can have a graphic visualisation of both GBM fits by looking at the corresponding plots on fitted-vs-actual values:
+Easily we can notice that across the different samples, the GBM algorithms return the lowest RMSE, hence they should be preferred.
+Finally, a graphic visualisation of both GBM fits can be plotted by looking at the corresponding fitted-vs-actual values:
 
 ## MIQ3
 
 
 ## BGQ3
 ![](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part1_modelling/Plots/GBM_baseBGQ3.png)
+
+At a first glance, the majority of predicted values seem to gravitate around the 45-degree line, indicating good prediction power. 
+However, as noticed already in the main dataset, values towards the top price distribution (log scale) of the two live sets are predicted with less accurancy than the other values, flagging for the presence of outliers that are hard to model. 
+The log transformation may further amplify this underestimation, and data trimming should be considered in future applications to improve the prediction power.
+In addition, prediction on prices in level terms may also be considered as alternative model.
+
 
