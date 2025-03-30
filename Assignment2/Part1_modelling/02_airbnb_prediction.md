@@ -261,11 +261,11 @@ amenities*, as well as *between property features and location*.
 After performing the different RF specifications on the *training set*,
 we can check the models performance in the below table:
 
-| RMSE          | Median | Mean  |
-|---------------|--------|-------|
-| model_1 0.557 | 0.587  | 0.584 |   
-| model_2 0.480 | 0.487  | 0.496 |   
-| model_3 0.485 | 0.517  | 0.512 |   
+| RMSE     | Median | Mean  |
+|----------|--------|-------|
+| model_1  | 0.587  | 0.584 |   
+| model_2  | 0.487  | 0.496 |   
+| model_3  | 0.517  | 0.512 |   
 
 ``` r
 # from ch14 Data Analysis book, let's add additional interactions
