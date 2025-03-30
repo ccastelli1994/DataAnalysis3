@@ -441,5 +441,6 @@ with a premium effect observed for properties in Brera and Duomo.
 
 To validate the selection of this model, we will apply the same model
 selection routine to the other available datasets - i.e. MIQ3 and BGQ3 -
-to determine whether both the GBM specification and the identified key
-variables remain the most relevant predictors for Airbnb property price.
+to determine whether the identified key variable and  GBM specifications remain the most relevant predictors for Airbnb property prices.
+Results of such comparison are available at the ![Validation](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/Validation_Summary.md) summary.
+
