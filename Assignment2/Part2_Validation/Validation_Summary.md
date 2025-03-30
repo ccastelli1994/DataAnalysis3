@@ -2,8 +2,8 @@
 # Testing prediction on other later dates/cities
 
 After the selection of the GBM broad model for our main database MIQ1, we test its goodness of fit on other two databases:
-- MIQ3
-- BGQ3 (![Script](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/02_predictBGQ3.R) )
+- MIQ3 (![ScriptMIQ3](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/02_predictMIQ3.R))
+- BGQ3 (![ScriptBGQ3](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/02_predictBGQ3.R))
 
 Unfortunately, the initial number of observations in BGQ3 (3.3k) shrinks to ~1.2k after the data cleaning process, as we decide to keep properties only in the city of Bergamo and not in the surrounding area.
 
