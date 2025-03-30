@@ -5,9 +5,10 @@ After the selection of the GBM broad model for our main database MIQ1, we test i
 - MIQ3
 - BGQ3 (![Script](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part2_Validation/02_predictBGQ3.R) )
 
-By repeating the entire model selection process performed for the main database MIQ1. 
+Unfortunately, the initial number of observations in BGQ3 (3.3k) shrinks to ~1.2k after the data cleaning process, as we decide to keep properties only in the city of Bergamo and not in the surrounding area.
 
-The results are summirised in the final Horse-Race Table below:
+Then, the entire model selection process performed for the main database MIQ1 is repeated, and we summarise results in the following section. 
+First, we can compare the final CV RMSE in a Horse-Race Table, where to the MIQ1 Holdout set (6.3k) we compared the entire observations contained in MIQ3 (~21k) and BGQ3(~1.5k) :
 
 | Model CV RMSE                   |MIQ1 Test| MIQ3  |  BGQ3 | 
 |---------------------------------|---------|-------|-------|
@@ -19,7 +20,12 @@ The results are summirised in the final Horse-Race Table below:
 |GBM (basic tuning) M4            | **0.434** | 0. | 0.398 |
 |GBM (broad tuning) M4            | 0.442   | 0. | **0.392** |
 
-where in both new samples, the GBM algorithms perform best. Hence, we can have a look at the corresponding fitted-to-actual y values:
+Easily we can notice that across the different samples, the GBM algorithms perform best by returning the lowest RMSE.
+Hence, we can have a graphic visualisation of both GBM fits by looking at the corresponding plots on fitted-vs-actual values:
 
+## MIQ3
+
+
+## BGQ3
 ![](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part1_modelling/Plots/GBM_baseBGQ3.png)
 
