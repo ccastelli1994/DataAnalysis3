@@ -398,7 +398,7 @@ comparison across RMSE computed under different model specifications.
 In particular, the following table shows a comparison across model
 performance considering the training set:
 
-|     Model                                 |  CV RMSE     |
+|     Model                                 |  Train RMSE  |
 |-------------------------------------------|--------------|
 |     OLS   M4                              |     0.511    |
 |     LASSO   M4                            |     0.554    |
