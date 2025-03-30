@@ -12,11 +12,11 @@ First, we can compare the final CV RMSE in a Horse-Race Table, where to the MIQ1
 
 | Model CV RMSE                   |MIQ1 Test| MIQ3  |  BGQ3 | 
 |---------------------------------|---------|-------|-------|
-|  OLS M4                         | 0.490   | 0. | 0.395 |
-|LASSO M4                         | 0.539   | 0. | 0.423 |
-|Random forest (smaller model M3) | 0.558   | 0. | 0.419 |
-|Random forest M4                 | 0.469   | 0. | 0.395 |
-|Random forest M4 + interact      | 0.488   | 0. | 0.394 |
+|  OLS M4                         | 0.490   | 0.515 | 0.395 |
+|LASSO M4                         | 0.539   | 0.569 | 0.423 |
+|Random forest (smaller model M3) | 0.558   | 0.606 | 0.419 |
+|Random forest M4                 | 0.469   | 0.513 | 0.395 |
+|Random forest M4 + interact      | 0.488   | 0.530 | 0.394 |
 |GBM (basic tuning) M4            | **0.434** | 0. | 0.398 |
 |GBM (broad tuning) M4            | 0.442   | 0. | **0.392** |
 
@@ -24,7 +24,7 @@ Easily we can notice that across the different samples, the GBM algorithms retur
 Finally, a graphic visualisation of both GBM fits can be plotted by looking at the corresponding fitted-vs-actual values:
 
 ## MIQ3
-
+![](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part1_modelling/Plots/GBM_baseMIQ3.png)
 
 ## BGQ3
 ![](https://github.com/ccastelli1994/DataAnalysis3/blob/main/Assignment2/Part1_modelling/Plots/GBM_baseBGQ3.png)
