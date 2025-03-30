@@ -17,8 +17,8 @@ First, we can compare the final CV RMSE in a Horse-Race Table, where to the MIQ1
 |Random forest (smaller model M3) | 0.558   | 0.606 | 0.419 |
 |Random forest M4                 | 0.469   | 0.513 | 0.395 |
 |Random forest M4 + interact      | 0.488   | 0.530 | 0.394 |
-|GBM (basic tuning) M4            | **0.434** | 0. | 0.398 |
-|GBM (broad tuning) M4            | 0.442   | 0. | **0.392** |
+|GBM (basic tuning) M4            | **0.434** | 0.497 | 0.398 |
+|GBM (broad tuning) M4            | 0.442   | **0.494** | **0.392** |
 
 Easily we can notice that across the different samples, the GBM algorithms return the lowest RMSE, hence they should be preferred.
 Finally, a graphic visualisation of both GBM fits can be plotted by looking at the corresponding fitted-vs-actual values:
