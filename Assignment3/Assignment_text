@@ -1,0 +1,40 @@
+Your task is to build a model to predict fast growth of firms using the bisnode-firms data we used in class.
+•	You should design the target (fast growth), it can be measured in any way you like over one (2013 vs 2012) or two years (2014 vs 2012).
+•	You need to argue for your choice, discussing a few alternatives, maybe 2-3 paragraphs using concepts and ideas from corporate finance.
+•	Build three different models and pick the one you like the most.
+•	Should include at least one logit and one random forest.
+________________________________________
+Data management, sample design
+•	The dataset is very close to what you saw in seminar.
+•	But you need to start with the panel for 2010-2015.
+•	Two pieces of code, sample design and prediction:
+o	ch17-firm-exit-data-prep.
+o	ch17-predicting-firm-exit.
+•	On the sample, you can make changes, but do not need to.
+________________________________________
+Features
+•	You may use similar variables and features we used for exit prediction.
+•	You may do differently.
+•	Look at descriptives, lowess, tabulate factors, make decisions.
+________________________________________
+Tasks 1
+PART I: Probability prediction
+•	Predict probabilities.
+•	Look at cross-validated performance and pick your favorite model.
+PART II: Classification
+•	Think about the business problem, and define your loss function (like FP=X dollars, FN=Y dollars).
+•	For each model:
+o	Predict probabilities.
+o	Look for the optimal classification threshold.
+o	Calculate expected loss with your loss function.
+o	Pick the model that has the smallest average (over 5 folds) expected loss.
+PART III: Discussion of results
+•	Show a confusion table (on a selected fold or holdout set).
+•	Discuss results, evaluate how useful your model may be.
+________________________________________
+Tasks 2
+•	There are two industry categories in the dataset: manufacturing and services (repair, accommodation, food).
+•	Define a single loss function, but carry out the exercise for two groups separately.
+•	Pick a prediction model, carry out classification for manufacturing and then repeat for services.
+•	Compare the model performance across two samples
+
