@@ -633,9 +633,12 @@ before, as shown in the second row of the table above.
 We can also compare the related classification statistics in the table
 below:
 
-Threshold: 0.50 0.11 \|———–\|—–\|—–\| \|Accuracy \|0.88 \|0.65 \|
-\|Sensitivity\|0.04 \|0.59 \| \|Specificity\|0.99 \|0.66 \|
-\|———–\|—–\|—–\|
+| Model | Logit Default | Logit No Loss | 
+|-------|---------------|---------------|
+|Threshold| 0.50        | 0.11          |
+|Accuracy | 0.88        | 0.65          |
+|Sensitivity | 0.04     | 0.59          | 
+|Specificity | 0.99     | 0.66          | 
 
 where
 
@@ -718,9 +721,12 @@ gets worse and now reaches 0.76.
 Again, we can compare the classification statistics wrt to the previous
 cases, as shown in the table below:
 
-Threshold: 0.50 0.11 0.085 \|———–\|—–\|—–\|——\| \|Accuracy \|0.88 \|0.65
-\| 0.54 \| \|Sensitivity\|0.04 \|0.59 \| 0.71 \| \|Specificity\|0.99
-\|0.66 \| 0.53 \| \|———–\|—–\|—–\|——\|
+| Model | Logit Default | Logit No Loss | Logit Loss |
+|-------|---------------|---------------|------------|
+|Threshold| 0.50        | 0.11          | 0.085      |
+|Accuracy | 0.88        | 0.65          | 0.54       | 
+|Sensitivity | 0.04     | 0.59          | 0.71       | 
+|Specificity | 0.99     | 0.66          | 0.53       | 
 
 As expected, the inclusion of a penalty in the mis-prediction of the top
 5% class (i.e. false negatives) significantly improves the correct
@@ -817,12 +823,15 @@ The Random Forest neatly outperforms the other models, and it is choosen
 as our best candidate. We can compute the final classification table,
 using the indicated threshold of 0.124.
 
-And the corresponding prediction measureas: \| Model \| Logit Default \|
-Logit No Loss \| Logit Loss \| RF Loss \|
-\|———–\|—————\|—————\|————-\|———-\| \|Threshold: \| 0.50 \| 0.11 \|
-0.085 \| 0.124 \| \|Accuracy \| 0.88 \| 0.65 \| 0.54 \| 0.54 \|
-\|Sensitivity\| 0.04 \| 0.59 \| 0.71 \| 0.72 \| \|Specificity\| 0.99 \|
-0.66 \| 0.53 \| 0.52 \| \|———–\|—————\|—————\|————-\|———-\|
+And the corresponding prediction measureas:
+
+| Model | Logit Default | Logit No Loss | Logit Loss | RF Loss |
+|-------|---------------|---------------|------------|---------|
+|Threshold| 0.50        | 0.11          | 0.085      | 0.124   |
+|Accuracy | 0.88        | 0.65          | 0.54       | 0.54    |
+|Sensitivity | 0.04     | 0.59          | 0.71       | 0.72    | 
+|Specificity | 0.99     | 0.66          | 0.53       | 0.52    |
+
 
 where results for the RF model are very similar to the previous Logit
 with the Loss Function, but with the additional benefit of imporving
