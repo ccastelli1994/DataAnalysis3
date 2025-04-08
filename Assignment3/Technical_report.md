@@ -275,12 +275,12 @@ to 0)
 We first compare our two different measures of growth, namely 1-year and
 2-years rates of change:
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-8-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-8-1.png)
 
 The two plots look very similar, so we zoom in into the two distributions
 using boxplots:
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-9-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-9-1.png)
 
 As we are interested in fast growing firms, the 2-y change seems to have
 more variability towards the top of the distribution. Hence, we decide
@@ -305,7 +305,7 @@ Top 5% category.
 
 ### Age
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-12-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-12-1.png)
 
 Here the linear fit seems already adequate to describe the growth-age
 relationship however, in order to remain consistent with the literature
@@ -313,12 +313,12 @@ the quadratic form is kept in the analysis
 
 ### Lowess on Dummy Profits
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots//unnamed-chunk-13-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots//unnamed-chunk-13-1.png)
 
 It seems to have an overall convex shape. We can further zoom in to the
 top distribution (i.e. Top5% category)
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-14-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-14-1.png)
 
 Overall positive and linear, meaning that registering profits is
 correlated with fast growth.
@@ -327,33 +327,33 @@ correlated with fast growth.
 
 #### Balance sheet information
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-15-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-15-1.png)
 
 Overall, no big influence (age, tang assets, shared equite and liquidity
 most relevant)
 
 #### P/L variables
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-16-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main//Assignment3/plots/unnamed-chunk-16-1.png)
 
 Again no bg influence (personnel and material expenses, income before
 tax and profit/loss of the year - interestingly all at negative values)
 
 #### CEO and management info
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-17-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-17-1.png)
 
 ## Factors
 
 ### Location
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-18-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-18-1.png)
 
 No significant variability
 
 - CEO demographics
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-19-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-19-1.png)
 
 Young CEOs emerge as potential canditats for fast growing firms.
 
@@ -604,7 +604,7 @@ set*.
 Both RMSE and AUC values are sufficiently close to those of the Train
 set. We can visualise graphically the corresponding ROC-Curve:
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-26-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-26-1.png)
 
 ###### Classification Table
 
@@ -746,7 +746,7 @@ share is maximised.
 Finally, we can plot a visual representation of the fitted versus actual
 values (i.e. y-y hat), analogous to the continuous case:
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-32-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-32-1.png)
 
 ## RF Probability (with loss function)
 
@@ -784,7 +784,7 @@ Plot.
 
 ### Importance Plot
 
-![](https://github.com/ccastelli1994/DataAnalysis3/tree/main/Assignment3/plots/unnamed-chunk-36-1.png)
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-36-1.png)
 
 In light of this plot, a comparison with thwe Logit M5 model can be made: -
 Both models highlight the relevance of liquidity, tangible assets,
