@@ -904,9 +904,16 @@ predominance of Service industry in the database, it has more than
 double the number of observations compared to the Manufacturing
 industry.
 
+| Sector | CV.RMSE   | CV.AUC    | Avg.of.optimal.thresholds | 
+|--------|-----------|-----------|---------------------------|
+| Manu   | 0.2506936 | 0.8534196 | 0.07374545                |
+| Serv   | 0.3030929 | 0.8069295 | 0.12512909                | 
+
 As a final step, we can look at the importance plots related to the two
 industries in the figure below, where a consistency of the set of
 predictors confirms the result of the main analysis.
+
+![](https://raw.githubusercontent.com/ccastelli1994/DataAnalysis3/main/Assignment3/plots/unnamed-chunk-44-1.png)
 
 # References
 
