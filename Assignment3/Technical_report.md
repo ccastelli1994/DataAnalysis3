@@ -364,6 +364,8 @@ including additional variables at every round:
 - M4: M3 + P/L info
 - M5: M5 + errors and missing flags
 
+The results of the various Logit specifications are available at the below Table, where Model 5 returns lowest AIC value.
+As this result consider the overall sample, we can now test its validity by using Cross-Validation (CV) on Train and Holdout sets.
 <!-- -->
 
    
@@ -472,9 +474,7 @@ including additional variables at every round:
     ## =========================================================================================================================================================================================================================================================================================================
     ## Note:                                                                                                                                                                                                                                                                         *p<0.1; **p<0.05; ***p<0.01
 
-Model 5 returns lowest AIC value. As this result consider the overall
-sample, we can now test its robustness by using Cross-Validation (CV) on
-Train and Holdout sets.
+
 
 ### Train versus Holdout
 
